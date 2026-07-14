@@ -76,6 +76,11 @@
     background-image: linear-gradient(90deg, #fff 50%, #242424 50%);
 }
 
+.page-content .container {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+}
+
 .page-section {
     position: relative;
 }
@@ -105,6 +110,9 @@
 }
 
 .program-row {
+    display: grid;
+    grid-template-columns: 440px 1fr;
+    gap: 40px;
     margin-top: 30px;
 }
 
@@ -116,6 +124,7 @@
 }
 
 .program-image {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -151,6 +160,12 @@
     font-weight: 700;
 }
 
+.auditory-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
 .auditory-image-wrapper {
     height: 160px;
     border-radius: 20px;
@@ -158,6 +173,7 @@
 }
 
 .auditory-image {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -169,6 +185,10 @@
 
 .auditory-list {
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 20px;
 }
 
 .prices-title {
@@ -178,7 +198,7 @@
     font-weight: 700;
 }
 
-.prices-text-wrapper {
+.prices-text-wrapper p {
     margin: 0;
 }
 
@@ -241,6 +261,13 @@
     margin-bottom: 10px;
 }
 
+.services-row {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 40px;
+    margin-top: 30px;
+}
+
 .services-list {
     margin: 0;
     padding: 0;
@@ -252,7 +279,8 @@
 }
 
 .services-right{
-
+ display: flex;
+ flex-direction: column;
 }
 
 .services-price {
@@ -266,11 +294,17 @@
 }
 
 .reviews-title {
+    margin: 0;
+    margin-bottom: 30px;
     font-size: 40px;
     font-weight: 700;
 }
 
 .reviews-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 40px;
+    padding: 20px 80px 20px 40px;
     border-radius: 20px;
 }
 
@@ -290,6 +324,7 @@
 }
 
 .reviews-item-image {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -318,6 +353,7 @@
 }
 
 .contacts-content {
+    padding: 20px 280px 20px 40px;
     border-radius: 20px;
 }
 
@@ -334,6 +370,9 @@
 }
 
 .contacts-form-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 30px;
 }
 
@@ -348,6 +387,8 @@
 
 .contacts-btn {
     position: relative;
+    display: flex;
+    justify-content: space-between;
     border-radius: 15px;
     padding: 20px 40px;
     padding-right: 80px;
@@ -383,6 +424,10 @@
     color: #fff;
 }
 
+.sidebar li:not(:last-child) {
+    margin-bottom: 40px;
+}
+
 .sidebar-title {
     margin: 0;
     margin-bottom: 20px;
@@ -397,6 +442,7 @@
 }
 
 .card-image-link {
+    display: block;
     width: 100%;
     height: 160px;
     border-radius: 20px;
@@ -408,6 +454,7 @@
 }
 
 .card-image {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
